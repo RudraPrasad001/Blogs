@@ -1,0 +1,96 @@
+body { 
+    margin: 0px;
+    color: white;
+    background-color: rgb(249, 126, 177);
+}
+
+.header {
+    padding-top: 1%;
+    font-family: comic;
+    text-align: center;
+    font-size: 150%;
+    background-color: rgb(210, 81, 135);
+}
+
+
+.content h2 {
+    color:white;
+    text-align: center;
+}
+
+.banner {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNLQcUtdErsaVaXScq3XuUF3je25lZSjoFQ&s");
+    background-color: rgb(210, 81, 135);
+    background-blend-mode: color-burn;
+}
+
+
+.blogcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.blogs {
+    color:white;
+    background-color: rgb(210, 81, 135);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+.blogtitle {   
+    font-family: comic;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.blogdescription {
+    font-weight: lighter;
+    font-family: cool;
+    font-size: 100%;
+}
+
+
+/* Mobile compatablity style 
+
+(It just changes some shit to make it look good for mobile)
+*/
+@font-face {
+    font-family: cool;
+    src: url("Atop-R99O3.ttf");
+}
+@font-face {
+    font-family: comic;
+    src: url("Comic\ Sans\ MS\ 400.ttf");
+}
+
+@media (max-width: 800px) {
+    .blogs {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blogs {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 120%; 
+    }
+
+    .blogtitle {
+        font-size: 110%;
+    }
+
+    .blogdescription {
+        font-size: 100%;
+    }
+}
